@@ -216,6 +216,7 @@
         </svg>
       </div>
       <h3>Category Breakdown</h3>
+     
       <p>Every review classified by topic — product quality, delivery, customer support, pricing, and more.</p>
     </div>
     <div class="feature">
@@ -275,6 +276,10 @@
         </select>
       </div>
 
+      <div class="form-group">
+        <label>Country</label>
+        <input type="text" id="brandCountry" placeholder="e.g. India, USA, UK" required/>
+      </div>  
       <div class="form-group">
         <label>Primary Website URL</label>
         <input type="url" id="primaryWebsite" required/>
@@ -399,6 +404,7 @@
       additionalUrl2: document.getElementById('additionalUrl2') ? document.getElementById('additionalUrl2').value.trim() : '',
       playStoreUrl:   document.getElementById('playStoreUrl').value.trim(),
       brandCategory,
+      country:        document.getElementById('brandCountry').value.trim(),
       email,
       tier: 'Free'
     };
